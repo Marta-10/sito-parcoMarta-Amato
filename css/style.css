@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+header{
+    background-color: #ccc;
+     max-width: 10000px;
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+     padding: 10px 20px;
+    }
+
+
+  header h6{
+    font-size: 20px;
+    font-weight: 400;
+    
+
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+  
+}
+
+
+
+
+.info h1{
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 68px;
+}
+
+
+.info h2{
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.info h3 {
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.info h4{
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 36px;
+}
+.info h5{
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+
+.info h6{
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.centered-image{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.centered-image img{
+     max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+.content{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+.griglia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card{
+    border: 2px solid #9CACBC;
+    background-color: #9CACBC;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #9CACBC;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #ccc;
+     max-width: 10000px;
+     margin-top: 30px;
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+     padding: 10px 20px;
+    }
+
+ a:visited {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:600px){
+
+}
+
+
+
+
+
