@@ -1,3 +1,46 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul, a {
+    list-style: none ;
+    color: black;
+    text-decoration: none;
+  }
+
+  .width {
+    max-width: 1060px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  a:visited {
+    color: black;}
+
+    a:hover {
+    color: #1662ae !important;}
+
+  .card p a {
+    padding-top: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 body{
     margin: 0;
     font-family: "Bricolage Grotesque", sans-serif;
@@ -10,22 +53,25 @@ img{
 }
 
 
+.width .lista ul li {
+    list-style: disc !important;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
 header{
     background-color: #ccc;
-     max-width: 10000px;
      margin-bottom: 30px;
      display: flex;
      justify-content: space-between;
      align-items:center;
-     padding: 10px 20px;
+     padding: 20px 60px;
     }
 
 
   header h6{
     font-size: 20px;
     font-weight: 400;
-    
-
 }
 
 
@@ -41,38 +87,40 @@ nav ul {
   
 }
 
+.card p a {
+    font-size: 22px;
+    margin: 50px 0;
+}
 
-
-
-.info h1{
+h1{
     margin: 0;
     color: black;
     text-align: center;
     font-weight: normal;
     font-size: 68px;
-    margin-bottom: 30px;
+
 }
 
 
-.info h2{
-    margin: 0;
+h2{
+    margin-top: 30px;
+    margin-bottom: 50px;
     color: black;
-    text-align: center;
-    font-weight: normal;
+    text-align: left !important;
     font-size: 36px;
-    margin-bottom: 30px;
+    font-weight: 100;
 }
 
-.info h3 {
+h3 {
     margin: 0;
     color: black;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
     font-size: 36px;   
     margin-bottom: 30px;
 }
 
-.info h4{
+h4{
     margin: 0;
     color: black;
     text-align: center;
@@ -80,7 +128,7 @@ nav ul {
     font-size: 36px;
     margin-bottom: 30px;
 }
-.info h5{
+    h5{
     margin: 0;
     color: black;
     text-align: center;
@@ -90,13 +138,13 @@ nav ul {
 }
 
 
-.info h6{
+    h6{
     margin: 0;
     color: black;
     text-align: center;
     font-weight: normal;
     font-size: 36px;
-    margin-bottom: 30px;
+  
 }
 
 .centered-image{
@@ -108,9 +156,12 @@ nav ul {
 .centered-image img{
      max-width: 100%;
     height: auto;
+    width: 80%;
+ 
+    object-fit: cover;
+ 
+    
 }
-
-
 
 
 
@@ -125,8 +176,6 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    max-width: 1000px;
-    margin: auto;
 }
 
 .card{
@@ -145,6 +194,8 @@ nav ul {
     border-radius: 10px;
 }
 
+
+
 footer{
     background-color: #ccc;
      max-width: 10000px;
@@ -161,23 +212,28 @@ footer{
     color: black;
 }
 
+.card:hover {
+    transform: scale(1.1);
+}
+
 /*Responsive*/
 @media (max-width:600px){
     .header .container,
     .footer-content {
+    display: flex;
     flex-direction: column; 
     text-align:center ;
     gap: 10px;
 
     }
+    .width {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 
 
-
-
-
-    
 
 
 
