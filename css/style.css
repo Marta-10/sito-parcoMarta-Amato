@@ -32,7 +32,7 @@ html {
     a:hover {
     color: #1662ae !important;}
 
-  .card p a {
+  .card p {
     padding-top: 20px;
   }
 
@@ -87,10 +87,6 @@ nav ul {
   
 }
 
-.card p a {
-    font-size: 22px;
-    margin: 50px 0;
-}
 
 h1{
     margin: 0;
@@ -178,16 +174,19 @@ h4{
     gap: 30px;
 }
 
-.card{
+.card{ 
     border: 2px solid #9CACBC;
     background-color: #9CACBC;
     border-radius: 15px;
     overflow: hidden;
     padding: 10px;
     background-color: #9CACBC;
+    margin-bottom: 45px;
 }
 
-.card img{
+
+
+.card a img{
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -216,8 +215,12 @@ footer{
     transform: scale(1.1);
 }
 
-/*Responsive*/
-@media (max-width:600px){
+.griglia div p {
+    font-size: 22px;
+
+}
+
+@media (max-width:800px){
     .header .container,
     .footer-content {
     display: flex;
@@ -229,6 +232,14 @@ footer{
     .width {
         margin-left: 50px;
         margin-right: 50px;
+    }
+
+    .griglia {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-bottom: 45px;
     }
 }
 
